@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./home.jsx";
 import Html from "./Html.jsx";
 import Css from "./Css.jsx";
-import Maths from "./maths.jsx";
+import Maths from "./Maths.jsx";
 import De from "./De.jsx";
 import Os from "./Os.jsx";
 import Dstc from "./Dstc.jsx";

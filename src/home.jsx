@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Home.css"; 
+import "./home.css";
 
 function Home() {
   const navigate = useNavigate();
@@ -16,16 +16,16 @@ function Home() {
       {/* Dynamic colorful blobs in the background */}
       <div className="blob blob-1"></div>
       <div className="blob blob-2"></div>
-                
+
       <div className="syllabus-card">
         <div className="card-inner">
-         {/* Animated Floating Icon */}
+          {/* Animated Floating Icon */}
           <div className="floating-icon">
-            <span>🚀</span> 
+            <span>🚀</span>
           </div>
           <h3 className="title-gradient">C23 SYLLABUS PORTAL</h3>
           <p className="subtitle">SELECT YOUR ACADEMIC YEAR</p>
-          
+
           <div className="input-group">
             <input
               list="courses"
