@@ -1,0 +1,42 @@
+/* Python Specific Background (Lime to Dark Green) */
+.python-theme {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+/* Python Icon Glow */
+.python-theme .floating-subject-icon {
+  filter: drop-shadow(0 0 20px #c0ff00);
+}
+
+/* Python Title Color */
+.python-theme .subject-title {
+  color: #c0ff00; /* Electric Lime */
+  text-shadow: 0 0 10px rgba(192, 255, 0, 0.3);
+}
+
+/* Python Badge */
+.neon-green {
+  background: #c0ff00;
+  color: #004d40;
+}
+
+/* Python Specific Button Glow */
+.glow-button-python {
+  background: linear-gradient(90deg, #11998e, #c0ff00);
+  border: none;
+  padding: 15px 35px;
+  border-radius: 12px;
+  color: #004d40; /* Dark text for contrast on bright button */
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(192, 255, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-button-python:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 30px rgba(192, 255, 0, 0.8);
+}

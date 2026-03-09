@@ -1,0 +1,137 @@
+ Animated Gradient Background */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  /* Deep Cosmic Blue to Purple */
+  background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+}
+
+/* Floating Colorful Blobs */
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  filter: blur(80px);
+  z-index: 0;
+  opacity: 0.6;
+  animation: move 10s infinite alternate;
+}
+.blob-1 { background: #ff0080; top: -10%; left: -10%; }
+.blob-2 { background: #00dfd8; bottom: -10%; right: -10%; animation-delay: 2s; }
+
+@keyframes move {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(50px, 50px) scale(1.2); }
+}
+
+/* Glassmorphism Card with Neon Border */
+.syllabus-card {
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 3px; /* Creates the thin border effect */
+  border-radius: 25px;
+  background: linear-gradient(to right, #ff0080, #7928ca, #00dfd8);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.card-inner {
+  background: #1a1a2e; /* Dark theme inside the card */
+  padding: 50px 40px;
+  border-radius: 22px;
+  text-align: center;
+}
+
+/* Rainbow Text Title */
+.title-gradient {
+  font-size: 1.8rem;
+  font-weight: 900;
+  background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  color: #a0a0c0;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+/* Colorful Input */
+.syllabus-input {
+  width: 100%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #302b63;
+  border-radius: 12px;
+  color: #00dfd8; /* Neon Cyan text */
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.syllabus-input:focus {
+  border-color: #ff0080; /* Glows Pink on click */
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Placeholder Color */
+::placeholder {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+/* Floating Icon Styling */
+.floating-icon {
+  font-size: 5rem; /* Large and bold */
+  margin-bottom: 20px;
+  display: inline-block;
+  /* Adds a neon glow to the icon */
+  filter: drop-shadow(0 0 15px rgba(0, 223, 216, 0.8)); 
+  animation: float 3s ease-in-out infinite;
+}
+
+/* The Floating Logic */
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg); /* Moves up and tilts slightly */
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+/* Extra Colorful Touch for the Card Inner */
+.card-inner {
+  background: #1a1a2e;
+  padding: 50px 40px;
+  border-radius: 22px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glowing reflection on the card */
+.card-inner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,0,128,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}

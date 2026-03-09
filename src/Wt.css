@@ -1,0 +1,52 @@
+/* Web Tech Specific Background (Deep Purple to Magenta) */
+.wt-theme {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+/* Web Icon Glow (Neon Pink/Cyan) */
+.wt-theme .floating-subject-icon {
+  filter: drop-shadow(0 0 20px #ff00de);
+  animation: rotateGlobe 8s linear infinite; /* Special rotation for the globe! */
+}
+
+@keyframes rotateGlobe {
+  from { transform: rotate(0deg) translateY(0); }
+  50% { transform: rotate(180deg) translateY(-20px); }
+  to { transform: rotate(360deg) translateY(0); }
+}
+
+/* Web Tech Title Color */
+.wt-theme .subject-title {
+  color: #fff;
+  text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de;
+  letter-spacing: 3px;
+}
+
+/* Web Tech Badge */
+.neon-purple {
+  background: #ff00de;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 0, 222, 0.6);
+}
+
+/* Web Tech Specific Button (Neon Pink to Cyan) */
+.glow-button-wt {
+  background: linear-gradient(90deg, #ff00de, #00d2ff);
+  border: none;
+  padding: 15px 35px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(255, 0, 222, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-button-wt:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 35px #ff00de;
+  letter-spacing: 1px;
+}

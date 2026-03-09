@@ -1,0 +1,55 @@
+/* Data Structures Specific Background (Deep Forest to Dark Slate) */
+.data-theme {
+  background: linear-gradient(135deg, #002b36 0%, #073642 50%, #11998e 100%);
+  /* "Node-Connection" Background Effect */
+  background-image: radial-gradient(circle at 2px 2px, rgba(17, 153, 142, 0.2) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+/* Data Icon Glow (Neon Emerald) */
+.data-theme .floating-subject-icon {
+  filter: drop-shadow(0 0 20px #2ecc71);
+  /* "Linking" animation */
+  animation: linkPulse 4s infinite ease-in-out;
+}
+
+@keyframes linkPulse {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  50% { transform: scale(1.2) rotate(15deg); opacity: 0.7; }
+}
+
+/* Data Title Color */
+.data-theme .subject-title {
+  color: #2ecc71; /* Emerald Green */
+  text-shadow: 0 0 10px rgba(46, 204, 113, 0.4);
+  letter-spacing: 2px;
+}
+
+/* Data Badge */
+.neon-emerald {
+  background: #2ecc71;
+  color: #002b36;
+  font-weight: 900;
+  box-shadow: 0 0 15px rgba(46, 204, 113, 0.5);
+}
+
+/* Data Specific Button (Emerald to Forest) */
+.glow-button-data {
+  background: linear-gradient(90deg, #11998e, #38ef7d);
+  border: 1px solid #2ecc71;
+  padding: 18px 45px;
+  border-radius: 50px;
+  color: #002b36;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(46, 204, 113, 0.3);
+}
+
+.glow-button-data:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 45px #2ecc71;
+  background: #fff;
+  color: #11998e;
+}

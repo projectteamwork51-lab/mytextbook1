@@ -1,0 +1,56 @@
+/* CNCS Specific Background (Pure Black to Deep Crimson) */
+.cncs-theme {
+  background: linear-gradient(135deg, #000000 0%, #434343 50%, #8b0000 100%);
+  /* Digital Grid Effect */
+  background-image: linear-gradient(rgba(255, 0, 0, 0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Security Icon Glow (Neon Red) */
+.cncs-theme .floating-subject-icon {
+  filter: drop-shadow(0 0 20px #ff0000);
+  /* "Scanning" animation */
+  animation: scanEffect 2.5s infinite alternate;
+}
+
+@keyframes scanEffect {
+  0% { transform: scale(1); filter: drop-shadow(0 0 10px #ff0000); }
+  100% { transform: scale(1.15); filter: drop-shadow(0 0 30px #ff4d4d); }
+}
+
+/* CNCS Title Color */
+.cncs-theme .subject-title {
+  color: #ff4d4d; /* Bright Red */
+  text-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+  letter-spacing: 1px;
+}
+
+/* CNCS Badge */
+.neon-red-security {
+  background: #ff0000;
+  color: #fff;
+  font-weight: 900;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+/* CNCS Specific Button (Blood Red to Black) */
+.glow-button-cncs {
+  background: linear-gradient(90deg, #8b0000, #000000);
+  border: 1px solid #ff0000;
+  padding: 18px 45px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.glow-button-cncs:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 45px #ff0000;
+  background: #ff0000;
+  color: #000;
+}

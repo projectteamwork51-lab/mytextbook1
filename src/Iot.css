@@ -1,0 +1,51 @@
+/* IoT Specific Background (Deep Navy to Electric Cyan) */
+.iot-theme {
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+/* IoT Icon Glow (Neon Orange) */
+.iot-theme .floating-subject-icon {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  /* Optional: add a slight pulse to simulate a signal */
+  animation: signalPulse 2s infinite ease-in-out;
+}
+
+@keyframes signalPulse {
+  0%, 100% { transform: scale(1) translateY(0); opacity: 1; }
+  50% { transform: scale(1.1) translateY(-15px); opacity: 0.8; }
+}
+
+/* IoT Title Color */
+.iot-theme .subject-title {
+  color: #00f2fe; /* Electric Cyan */
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+  letter-spacing: 2px;
+}
+
+/* IoT Badge */
+.neon-orange {
+  background: #ff8c00;
+  color: #fff;
+  font-weight: 800;
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.6);
+}
+
+/* IoT Specific Button (Cyan to Blue) */
+.glow-button-iot {
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  border: none;
+  padding: 15px 35px;
+  border-radius: 12px;
+  color: #000;
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+}
+
+.glow-button-iot:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px #00f2fe;
+  filter: brightness(1.2);
+}

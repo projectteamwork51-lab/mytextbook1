@@ -1,0 +1,44 @@
+/* IME Specific Background (Midnight Blue to Royal Indigo) */
+.ime-theme {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+}
+
+/* IME Icon Glow (Bright Gold) */
+.ime-theme .floating-subject-icon {
+  filter: drop-shadow(0 0 20px #ffd700);
+}
+
+/* IME Title Color */
+.ime-theme .subject-title {
+  color: #ffd700; /* Gold */
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+  letter-spacing: 1px;
+}
+
+/* IME Badge */
+.neon-gold {
+  background: #ffd700;
+  color: #000;
+  font-weight: 900;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+/* IME Specific Button (Gold Gradient) */
+.glow-button-ime {
+  background: linear-gradient(90deg, #ffd700, #b8860b);
+  border: none;
+  padding: 15px 35px;
+  border-radius: 12px;
+  color: #000;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.glow-button-ime:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 35px #ffd700;
+  background: linear-gradient(90deg, #fff, #ffd700);
+}

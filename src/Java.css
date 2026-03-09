@@ -1,0 +1,44 @@
+/* Java Specific Background (Deep Red to Burnt Orange) */
+.java-theme {
+  background: linear-gradient(135deg, #cb2d3e 0%, #ef473a 100%);
+}
+
+/* Java Icon Glow */
+.java-theme .floating-subject-icon {
+  filter: drop-shadow(0 0 20px #ffd700); /* Golden Glow */
+}
+
+/* Java Title Color */
+.java-theme .subject-title {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px #ff0000;
+}
+
+/* Java Badge */
+.neon-red {
+  background: #fff;
+  color: #cb2d3e;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Java Specific Button Glow (Gold/Red) */
+.glow-button-java {
+  background: linear-gradient(90deg, #ffd700, #ff8c00);
+  border: none;
+  padding: 15px 35px;
+  border-radius: 12px;
+  color: #000; /* High contrast dark text */
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-button-java:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.8);
+  filter: brightness(1.1);
+}

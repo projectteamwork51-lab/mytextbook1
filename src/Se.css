@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com');
+
+/* 1. UNIQUE MESH BACKGROUND */
+.subject-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* A multi-point colorful mesh gradient */
+  background-color: #0a0a0a;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%), 
+    radial-gradient(at 0% 100%, hsla(321,49%,30%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 100%, hsla(180,49%,30%,1) 0, transparent 50%);
+  font-family: 'Outfit', sans-serif;
+  overflow: hidden;
+}
+
+/* 2. RAINBOW GRADIENT TEXT (Super Unique) */
+.subject-title {
+  font-family: 'Syncopate', sans-serif;
+  font-size: clamp(2rem, 8vw, 4rem); /* Responsive size */
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 20px;
+  
+  /* This clips the background to the text itself */
+  background: linear-gradient(to right, #ff00de, #00d2ff, #c0ff00, #ff8c00);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Animated text gradient move */
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+
+/* 3. NEON DESCRIPTION */
+.subject-description {
+  color: #e0e0e0;
+  max-width: 600px;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 20px;
+  /* Subtle glow behind text */
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* 4. THE GLASS CARD (Floating Effect) */
+.subject-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 60px 40px;
+  border-radius: 40px;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.subject-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 50px rgba(0, 210, 255, 0.2);
+}
+
+/* 5. LIQUID BUTTON */
+/* 1. THE BASE BUTTON - "Glass-Neon" Style */
+.glow-button, .glow-button-os, .glow-button-python, .glow-button-java, .glow-button-wt {
+  position: relative;
+  display: inline-block;
+  padding: 18px 45px;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.05); /* Transparent glass look */
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px; /* Pill shape */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Soft border */
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+/* 2. THE HOVER REVEAL - Fills with Color */
+.glow-button:hover, .glow-button-os:hover {
+  background: #00d2ff;
+  border-color: #00d2ff;
+  color: #000;
+  box-shadow: 0 0 40px rgba(0, 210, 255, 0.7);
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* 3. UNIQUE COLORS PER SUBJECT */
+
+/* Python - Neon Lime */
+.glow-button-python:hover {
+  background: #c0ff00;
+  border-color: #c0ff00;
+  color: #000;
+  box-shadow: 0 0 40px rgba(192, 255, 0, 0.7);
+}
+
+/* Java - Flame Orange */
+.glow-button-java:hover {
+  background: #ff8c00;
+  border-color: #ff8c00;
+  color: #fff;
+  box-shadow: 0 0 40px rgba(255, 140, 0, 0.7);
+}
+
+/* Web Tech - Cyber Pink */
+.glow-button-wt:hover {
+  background: #ff00de;
+  border-color: #ff00de;
+  color: #fff;
+  box-shadow: 0 0 40px rgba(255, 0, 222, 0.7);
+}
+
+/* 4. CLICK EFFECT - Slight Squeeze */
+.glow-button:active {
+  transform: scale(0.95);
+}
+
+/* 5. ADDING A "SHINE" ANIMATION */
+.glow-button-se {
+  background: linear-gradient(90deg, #ffffff, #e0e0e0);
+  border: none;
+  padding: 15px 35px;
+  border-radius: 12px;
+  color: #512da8;
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.glow-button-se:hover {
+  transform: translateY(-5px) rotate(-1deg);
+  box-shadow: 0 0 35px #ffffff;
+  filter: contrast(1.1);
+}
+
+

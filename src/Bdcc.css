@@ -1,0 +1,55 @@
+/* BDCC Specific Background (Deep Space to Electric Silver) */
+.bdcc-theme {
+  background: linear-gradient(135deg, #141e30 0%, #243b55 100%);
+  /* Adding a subtle "Star Field" effect */
+  background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* BDCC Icon Glow (Electric White/Blue) */
+.bdcc-theme .floating-subject-icon {
+  filter: drop-shadow(0 0 20px #00d2ff);
+  animation: floatCloud 4s ease-in-out infinite;
+}
+
+@keyframes floatCloud {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.1); }
+}
+
+/* BDCC Title Color */
+.bdcc-theme .subject-title {
+  color: #fff;
+  text-shadow: 0 0 10px #00d2ff, 0 0 30px rgba(0, 210, 255, 0.4);
+  letter-spacing: 2px;
+}
+
+/* BDCC Badge */
+.neon-silver {
+  background: #dfe6e9;
+  color: #2d3436;
+  font-weight: 800;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* BDCC Specific Button (Silver to Sky Blue) */
+.glow-button-bdcc {
+  background: linear-gradient(90deg, #bdc3c7, #2c3e50);
+  border: none;
+  padding: 18px 45px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
+}
+
+.glow-button-bdcc:hover {
+  background: #00d2ff;
+  color: #000;
+  box-shadow: 0 0 40px #00d2ff;
+  transform: translateY(-5px);
+}

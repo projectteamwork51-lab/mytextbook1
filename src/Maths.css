@@ -1,0 +1,48 @@
+/* Maths Specific Background (Indigo to Deep Violet) */
+.maths-theme {
+  background: linear-gradient(135deg, #3f51b5 0%, #512da8 100%);
+  /* Optional: subtle grid lines background */
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Maths Icon Glow (Pure White/Silver) */
+.maths-theme .floating-subject-icon {
+  filter: drop-shadow(0 0 20px #ffffff);
+  font-weight: 100; /* Makes the infinity symbol look elegant */
+}
+
+/* Maths Title Color */
+.maths-theme .subject-title {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  letter-spacing: 4px;
+}
+
+/* Maths Badge */
+.neon-indigo {
+  background: #fff;
+  color: #512da8;
+  font-weight: 800;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Maths Specific Button (White to Silver) */
+.glow-button-maths {
+  background: linear-gradient(90deg, #ffffff, #e0e0e0);
+  border: none;
+  padding: 15px 35px;
+  border-radius: 12px;
+  color: #512da8;
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.glow-button-maths:hover {
+  transform: translateY(-5px) rotate(-1deg);
+  box-shadow: 0 0 35px #ffffff;
+  filter: contrast(1.1);
+}

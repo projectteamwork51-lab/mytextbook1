@@ -1,0 +1,55 @@
+/* DBMS Specific Background (Midnight Blue to Steel Silver) */
+.dbms-theme {
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  /* Data Stream Effect */
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 2px, transparent 2px);
+  background-size: 40px 40px;
+}
+
+/* Database Icon Glow (Silver/Cyan) */
+.dbms-theme .floating-subject-icon {
+  filter: drop-shadow(0 0 20px #dfe6e9);
+  /* "Storage Access" animation */
+  animation: dataBounce 3s infinite ease-in-out;
+}
+
+@keyframes dataBounce {
+  0%, 100% { transform: translateY(0) scale(1); filter: drop-shadow(0 0 10px #00d2ff); }
+  50% { transform: translateY(-15px) scale(1.05); filter: drop-shadow(0 0 30px #00d2ff); }
+}
+
+/* DBMS Title Color */
+.dbms-theme .subject-title {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
+  letter-spacing: 1px;
+}
+
+/* DBMS Badge */
+.neon-silver {
+  background: #dfe6e9;
+  color: #2d3436;
+  font-weight: 900;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* DBMS Specific Button (Silver to Deep Blue) */
+.glow-button-dbms {
+  background: linear-gradient(90deg, #bdc3c7, #2c3e50);
+  border: 1px solid #dfe6e9;
+  padding: 18px 45px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+}
+
+.glow-button-dbms:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 45px #00d2ff;
+  background: #fff;
+  color: #000;
+}

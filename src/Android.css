@@ -1,0 +1,54 @@
+/* Android Specific Background (Dark Slate to Deep Green) */
+.android-theme {
+  background: linear-gradient(135deg, #1d2671 0%, #a3cb38 100%);
+  /* Circuit Board Pattern Effect */
+  background-image: radial-gradient(#3ddc84 0.5px, transparent 0.5px);
+  background-size: 20px 20px;
+}
+
+/* Android Icon Glow (Neon Green) */
+.android-theme .floating-subject-icon {
+  filter: drop-shadow(0 0 20px #3ddc84);
+  /* Special "Blinking" animation for the robot */
+  animation: robotBlink 3s infinite ease-in-out;
+}
+
+@keyframes robotBlink {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 10px #3ddc84); }
+  50% { transform: scale(1.1); filter: drop-shadow(0 0 30px #3ddc84); }
+}
+
+/* Android Title Color */
+.android-theme .subject-title {
+  color: #3ddc84; /* Official Android Green */
+  text-shadow: 0 0 15px rgba(61, 220, 132, 0.4);
+  letter-spacing: 1px;
+}
+
+/* Android Badge */
+.neon-android-green {
+  background: #3ddc84;
+  color: #073042; /* Android Navy */
+  font-weight: 900;
+  box-shadow: 0 0 15px rgba(61, 220, 132, 0.5);
+}
+
+/* Android Specific Button (Android Navy to Green) */
+.glow-button-android {
+  background: linear-gradient(90deg, #073042, #3ddc84);
+  border: none;
+  padding: 18px 45px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(61, 220, 132, 0.3);
+}
+
+.glow-button-android:hover {
+  transform: translateY(-5px) rotate(2deg);
+  box-shadow: 0 0 40px #3ddc84;
+  color: #000;
+}
